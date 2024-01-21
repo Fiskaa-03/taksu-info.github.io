@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karma&family=Knewave&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter";
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	z-index: -1;
+}
+
+/* LANDING PAGE STYLE */
+.landing-page-container {
+	background-image: url("../img/banner.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+}
+
+.landing-page::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	z-index: -1;
+}
+
+.landing-page-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.landing-page-content-center {
+	text-align: center;
+	font-size: 3em;
+}
+
+.landing-page-content-center h1 {
+	color: #c1d92b;
+	text-transform: uppercase;
+}
+
+.landing-page-content-center a {
+	text-transform: uppercase;
+	background-color: #d9d9d9;
+	color: #000;
+	text-decoration: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.landing-page-content-center a::after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	background-color: #000;
+	display: none;
+	left: 0;
+	right: 0;
+	bottom: 5px;
+}
+
+.landing-page-content-center a:hover::after {
+	display: block;
+}
+/* END LANDING PAGE STYLE */
+
+/* BERANDA */
+
+header {
+	background-color: rgba(243, 246, 53, 0.49);
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+}
+
+.beranda-wrapper {
+	background-image: url("../img/2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: 100vh;
+}
+
+.beranda-wrapper::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	z-index: -1;
+}
+
+.beranda-page-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-family: "karma";
+
+	color: #fff;
+}
+
+/* END BERANDA */
+
+/* KATEGORI STYLE */
+
+.kategori {
+	font-family: "karma";
+}
+
+.bg-tari {
+	background-image: url("../img/bg-tari.png");
+}
+
+.kategori-wrapper {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: 100vh;
+}
+
+.kategori-wrapper::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	z-index: -1;
+}
+
+.kategori-page-content {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	font-family: "karma";
+	color: #fff;
+}
+
+.kategori-page-content-center {
+	margin-top: 100px;
+}
+
+.kategori-card {
+	padding: 10px;
+	width: 350px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	margin: 10px 20px;
+}
+
+.kategori-card:hover h3 {
+	text-decoration: underline;
+}
+
+.kategori-card a {
+	text-decoration: none;
+}
+
+.kategori-card img {
+	width: 100%;
+}
+
+.kategori-card h3 {
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* END KATEGORI STYLE */
+
+/* TABUH STYLE */
+
+.bg-tabuh {
+	background-image: url("../img/tabuh/bg-tabuh.png");
+}
+
+/* PERTUNJUKAN STYLE */
+
+.bg-pertunjukan {
+	background-image: url("../img/pertunjukan/bg-pertunjukan.png");
+}
+
+.pertunjukan-card-wrapper {
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.pertunjukan-card {
+	background: rgb(0, 0, 0, 0.5);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.pertunjukan-card img {
+	width: 100%;
+}
